@@ -2,25 +2,11 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
+      <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+        <img src="{{ site.icon | prepend: '/assets/img/' | relative_url}}" alt="{{ site.name }} {{ site.type }}" height="30">
+        <span class="font-weight-bold">{{site.name}}</span> {{ site.type}}
+      </a>
+      {% if site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
@@ -61,7 +47,7 @@
           {% for p in sorted_pages %}
             {% if p.nav and p.autogen == null %}
               {% if p.dropdown %}
-                {% assign has_active_child = false %}
+                {% comment %} {% assign has_active_child = false %}
                 {% for child in p.children %}
                   {% if page.title == child.title %}
                     {% assign has_active_child = true %}
@@ -96,7 +82,7 @@
                       {% endif %}
                     {% endfor %}
                   </div>
-                </li>
+                </li> {% endcomment %}
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
