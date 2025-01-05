@@ -1,0 +1,16 @@
+- name: apple
+  link: https://www.apple.com
+  logo: apple.svg
+
+- name: meta
+  link: https://www.meta.com
+  logo: meta.png
+
+- name: nvidia
+  link: https://www.nvidia.com
+  logo: nvidia.png
+
+- name: alibaba
+  link: https://www.alibaba.com
+  logo: alibaba.png
+

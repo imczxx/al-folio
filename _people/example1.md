@@ -3,7 +3,7 @@ name: 卡皮巴拉1号
 photo: example.jpg
 role: Associate Professor
 research_interests:
-  - Large Language Models
+  - Large Large Large Large Large Large Large Large Large Large Large Large Large Large Language Models
   - Recommendation Systems
   - Graph Neural Networks
 category: faculty

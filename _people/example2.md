@@ -1,6 +1,6 @@
 ---
 name: 卡皮巴拉2号
-photo: example.jpg
+photo: test.png
 role: example
 research_interests:
   - aaaaaaaaaaaaaaaaaaaaaaaaaa
