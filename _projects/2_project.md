@@ -2,8 +2,9 @@
 layout: page
 title: project 2
 description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+img: 3.jpg
 importance: 2
+time: 2024-01-01 15:59:00-0400
 category: work
 giscus_comments: true
 ---

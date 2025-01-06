@@ -1,7 +1,7 @@
 ---
 name: 卡皮巴拉2号
 photo: test.png
-role: example
+info: Associate Professor
 research_interests:
   - aaaaaaaaaaaaaaaaaaaaaaaaaa
   - (example2)

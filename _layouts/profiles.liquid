@@ -31,7 +31,7 @@ layout: default
                     {% else %}
                       <h5 class="card-title">{{ person.name }}</h5>
                     {% endif %}
-                    <p class="card-text">{{ person.role }}</p>
+                    <p class="card-text" style="color: gray">{{ person.info }}</p>
                     <div class="d-flex justify-content-center">
                       {% if person.homepage %}
                         <a href="{{ person.homepage }}" target="_blank" class="mx-2 icon-links"><i class="fas fa-globe"></i></a>

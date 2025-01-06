@@ -2,10 +2,11 @@
 layout: page
 title: project 3 with very long name
 description: a project that redirects to another website
-img: assets/img/7.jpg
+img: 7.jpg
 redirect: https://unsplash.com
 importance: 3
 category: work
+time: 2024-01-01 15:59:00-0400
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,7 +1,7 @@
 ---
 name: 卡皮巴拉1号
 photo: example.jpg
-role: Associate Professor
+info: Associate Professor
 research_interests:
   - Large Large Large Large Large Large Large Large Large Large Large Large Large Large Language Models
   - Recommendation Systems

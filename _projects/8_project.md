@@ -2,10 +2,11 @@
 layout: page
 title: project 8
 description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
+img: 9.jpg
 importance: 2
 category: work
 giscus_comments: true
+time: 2024-01-01 15:59:00-0400
 ---
 
 Every project has a beautiful feature showcase page.

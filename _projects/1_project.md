@@ -2,7 +2,8 @@
 layout: page
 title: project 1
 description: with background image
-img: assets/img/12.jpg
+img: 12.png
+time: 2024-01-01 15:59:00-0400
 importance: 1
 category: work
 related_publications: true

@@ -2,9 +2,10 @@
 layout: page
 title: project 5
 description: a project with a background image
-img: assets/img/1.jpg
+img: 1.jpg
 importance: 3
 category: fun
+time: 2024-01-01 15:59:00-0400
 ---
 
 Every project has a beautiful feature showcase page.
