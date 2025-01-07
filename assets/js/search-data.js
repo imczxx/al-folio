@@ -80,8 +80,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/al-folio/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:A simple inline announcement with...',
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "people-example1",
           title: 'Example1',
@@ -117,7 +117,7 @@ ninja.data = [{
           title: 'MiniVLA: A Better VLA with a Smaller Footprint',
           description: "Reducing OpenVLA&#39;s parameters 7x, and improving the input and output representation space.",
           section: "Projects",handler: () => {
-              window.location.href = "/al-folio/projects/9_project/";
+              window.location.href = "/al-folio/projects/example/";
             },},{
         id: 'social-email',
         title: 'email',
