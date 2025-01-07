@@ -4,7 +4,9 @@
     <div class="container">
       {% unless page.url == '/' %}
         <a class="navbar-brand title" href="{{ site.baseurl }}/">
-          <img src="{{ site.icon | prepend: '/assets/img/' | relative_url}}" alt="{{ site.name }} {{ site.type }}" height="30">
+          {% if site.icon_enabled %}
+            <img src="{{ site.icon | prepend: '/assets/img/' | relative_url}}" alt="{{ site.name }} {{ site.type }}" height="30">
+          {% endif %}
           <span style="font-weight: bold;">{{site.name}} {{ site.type}}</span>
         </a>
       {% endunless %}
@@ -37,7 +39,7 @@
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title | capitalize }}
+              {{- about_title | capitalize_each_word }}
               {% if page.permalink == '/' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
@@ -96,7 +98,7 @@
                     {%- assign url = p.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title | capitalize }}
+                    {{- p.title | capitalize}}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}

@@ -6,8 +6,6 @@ author:
 - Dorsa Sadigh
 description: Reducing OpenVLA's parameters 7x, and improving the input and output representation space.
 img: feature.png
-importance: 4
-category: fun
 time: 2024-01-02 15:59:00-0400
 ---
 # H1

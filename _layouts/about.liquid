@@ -3,7 +3,9 @@ layout: default
 ---
 <div class="post">
   <header class="post-header d-flex align-items-center">
-    <img src="{{ site.icon | prepend: '/assets/img/' | relative_url}}" alt="{{ site.name }} {{ site.type }}" class="mr-2 align-self-start" style="height: 72px;">
+    {% if site.icon_enabled %}
+      <img src="{{ site.icon | prepend: '/assets/img/' | relative_url}}" alt="{{ site.name }} {{ site.type }}" class="mr-2 align-self-start" style="height: 72px;">
+    {% endif %}
     <div>
       <h1 class="post-title mb-0">
         {{ site.name }} {{ site.type }}
