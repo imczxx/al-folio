@@ -18,14 +18,14 @@ time: 2024-01-02 15:59:00-0400
 raw code:
 {% raw %}
 ```markdown
-![alt text](/al-folio/assets/img/project/cover/5.jpg){: style="width:50%; height:auto;"}
+![alt text](/assets/img/project/cover/5.jpg){: style="width:50%; height:auto;"}
 <div class="caption">
     Caption using markdown syntax with css style.
 </div>
 ```
 
 {% endraw %}
-![alt text](/al-folio/assets/img/project/cover/5.jpg){: style="width:50%; height:auto;"}
+![alt text](/assets/img/project/cover/5.jpg){: style="width:50%; height:auto;"}
 <div class="caption">
     Caption using markdown syntax with css style.
 </div>
