@@ -37,20 +37,41 @@ raw code:
 ```html
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
+        {% include figure.liquid loading="eager" path="/assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
     </div>
 </div>
 <div class="caption">
     Multiple images in a row.
 </div>
 {% endraw %}
+```
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
+    </div>
+</div>
+<div class="caption">
+    Multiple images in a row.
+</div>
 
 raw code:
 {% raw %}
 ```html
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
+        {% include figure.liquid loading="eager" path="/assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
     </div>
 </div>
 <div class="caption">
@@ -58,16 +79,24 @@ raw code:
 </div>
 ```
 {% endraw %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/project/cover/4.jpg" title="example image" class="img-fluid" %}
+    </div>
+</div>
+<div class="caption">
+    Single image.
+</div>
 
 To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
 Here's the code for the last row of images above:
 
 To use latex, use the following syntax:
-- for inline latex, use `\\(`a`\\)` to wrap the latex code. (`$` is not usable due to the conflict with jQuery 😭)
-- for block-level latex, use `$$`a`$$` to wrap the latex code.
+- for inline latex, use `$$` `$$` to wrap the latex code. (`$` is not usable due to the conflict with jQuery 😭)
+- for block-level latex, use `$$` `$$` to wrap the latex code in a single paragraph.
 
 Example:
-- inline latex: \\(\LaTeX\\)
+- inline latex: $$\LaTeX$$
 - block-level latex:
 
 $$
