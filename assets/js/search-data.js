@@ -7,49 +7,49 @@ ninja.data = [{
     title: "home",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/al-folio/";
+      window.location.href = "/";
     },
   },{id: "nav-news",
           title: "news",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/al-folio/news/";
+            window.location.href = "/news/";
           },
         },{id: "nav-people",
           title: "people",
           description: "members of the lab or group",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/al-folio/people/";
+            window.location.href = "/people/";
           },
         },{id: "nav-projects",
           title: "projects",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/al-folio/projects/";
+            window.location.href = "/projects/";
           },
         },{id: "nav-publications",
           title: "publications",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/al-folio/publications/";
+            window.location.href = "/publications/";
           },
         },{id: "nav-funding",
           title: "funding",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/al-folio/funding/";
+            window.location.href = "/funding/";
           },
         },{id: "nav-join-us",
           title: "join us",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/al-folio/join_us/";
+            window.location.href = "/join_us/";
           },
         },{id: "dropdown-publications",
               title: "publications",
@@ -70,7 +70,7 @@ ninja.data = [{
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/al-folio/blog/";
+                window.location.href = "/blog/";
               },
             },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
@@ -79,7 +79,7 @@ ninja.data = [{
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/al-folio/news/announcement_2/";
+              window.location.href = "/news/announcement_2/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
@@ -87,37 +87,37 @@ ninja.data = [{
           title: 'Example1',
           description: "",
           section: "People",handler: () => {
-              window.location.href = "/al-folio/people/example1/";
+              window.location.href = "/people/example1/";
             },},{id: "people-example2",
           title: 'Example2',
           description: "",
           section: "People",handler: () => {
-              window.location.href = "/al-folio/people/example2/";
+              window.location.href = "/people/example2/";
             },},{id: "people-example3",
           title: 'Example3',
           description: "",
           section: "People",handler: () => {
-              window.location.href = "/al-folio/people/example3/";
+              window.location.href = "/people/example3/";
             },},{id: "people-example4",
           title: 'Example4',
           description: "",
           section: "People",handler: () => {
-              window.location.href = "/al-folio/people/example4/";
+              window.location.href = "/people/example4/";
             },},{id: "people-example5",
           title: 'Example5',
           description: "",
           section: "People",handler: () => {
-              window.location.href = "/al-folio/people/example5/";
+              window.location.href = "/people/example5/";
             },},{id: "people-example6",
           title: 'Example6',
           description: "",
           section: "People",handler: () => {
-              window.location.href = "/al-folio/people/example6/";
+              window.location.href = "/people/example6/";
             },},{id: "projects-minivla-a-better-vla-with-a-smaller-footprint",
           title: 'MiniVLA: A Better VLA with a Smaller Footprint',
           description: "Reducing OpenVLA&#39;s parameters 7x, and improving the input and output representation space.",
           section: "Projects",handler: () => {
-              window.location.href = "/al-folio/projects/example/";
+              window.location.href = "/projects/example/";
             },},{
         id: 'social-email',
         title: 'email',
@@ -137,7 +137,7 @@ ninja.data = [{
         title: 'RSS Feed',
         section: 'Socials',
         handler: () => {
-          window.open("/al-folio/feed.xml", "_blank");
+          window.open("//feed.xml", "_blank");
         },
       },{
         id: 'social-scholar',

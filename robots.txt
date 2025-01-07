@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://github.com/imczxx/al-folio//al-folio/sitemap.xml
+User-agent: * Disallow: Sitemap: https://star-sf.github.io///sitemap.xml
