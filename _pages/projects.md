@@ -19,15 +19,21 @@ horizontal: false
             <div class="card mb-4">
                 <div class="row no-gutters">
                     <div class="col-md-4 project-img-card">
-                          {% if project.img %}
-                              <img src="{{ project.img | prepend: '/assets/img/project/cover/' | relative_url }}" class="card-img project-img" alt="Project Image">
-                          {% else %}
-                              <img src="{{ site.icon | prepend: '/assets/img/' | relative_url }}" class="card-img project-img" alt="Project Image">
-                          {% endif %}
+                          <a href="{{ project.url | relative_url }}">
+                              {% if project.img %}
+                                  <img src="{{ project.img | prepend: '/assets/img/project/cover/' | relative_url }}" class="card-img project-img" alt="Project Image">
+                              {% else %}
+                                  <img src="{{ site.icon | prepend: '/assets/img/' | relative_url }}" class="card-img project-img" alt="Project Image">
+                              {% endif %}
+                          </a>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title project-title">{{ project.title }}</h5>
+                            <h5 class="card-title project-title">
+                                <a href="{{ project.url | relative_url }}" style="color: inherit; text-decoration: none;">
+                                    {{ project.title }}
+                                </a>
+                            </h5>
                             <p class="card-text project-author">
                                 <small class="text-muted">
                                     {% for author in project.author %}

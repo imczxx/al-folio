@@ -11,6 +11,9 @@ layout: default
 <div class="post">
   <header class="post-header" style="text-align: center;">
     <h1 class="post-title">{{ page.title | capitalize }}</h1>
+    {% comment %} author（逗号隔开） + time {% endcomment %}
+    <p class="post-author">{{ page.author | join: ', ' }} | {{ page.date | date: "%Y-%m-%d" }}</p>
+    <hr>
   </header>
 
   <article>
@@ -28,3 +31,4 @@ layout: default
     {% include giscus.liquid %}
   {% endif %}
 </div>
+

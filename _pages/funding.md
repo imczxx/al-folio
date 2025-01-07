@@ -2,7 +2,6 @@
 layout: funding
 permalink: /funding/
 title: funding
-description: funding
 nav: true
 nav_order: 5
 ---

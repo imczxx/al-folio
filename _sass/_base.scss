@@ -158,9 +158,9 @@ ul.task-list input[type="checkbox"] {
 // Caption
 
 .caption {
-  font-size: 0.875rem;
-  margin-top: 0.75rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.9em;
+  margin: 0;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -1487,6 +1487,7 @@ code,
 kbd,
 samp {
   font-family: "Roboto Mono";
+  color: var(--global-text-color);
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
@@ -1610,11 +1611,29 @@ table td{
   text-transform: none !important;
   box-shadow: none !important;
   margin: 0 !important;
-  padding: 10px 20px !important;
+  padding: 10px 10px !important;
 }
 
 // card
 .card{
   box-shadow: none !important;
-  border: 1.5px solid var(--global-divider-color) !important;
+  border: 1px solid var(--global-divider-color) !important;
+}
+
+// for markdown
+// img{
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5em 1em !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
